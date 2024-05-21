@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Typos Twist</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="game">
+    <div class="flex-container">
+      <div id="score" class="score">Score: 0</div>
+      <div id="questions-count" class="questions-count">Questions : 0</div>
+    </div>
+
+    <br>
+    <div id="introduction" class="center">Welcome to Typo Twist. The goal of the game is to guess what the typos provided mean. All of these typos are provided by a friend, and if you recognize the typos you know who this friend is lol.</div>
+    <div id="rules" class="center">So, couple of things to take note of. Your answer must be in proper English, even if the question uses short form. You won't need to use -'s. Ensure to keep punctuation if the question has it inside, like if it has a ?, keep the ? in your answer on the same word. Upper case and lower case doesn't matter.</div>
+    <br>
+
+    <h2 class="center">Question</h2>
+    <div id="questions" class="questions"></div>
+    <h2 class="center">Solution</h2>
+    <div id="solution" class="solution"></div>
+    <h2 class="center">Your Answer</h2>
+    <textarea id="answer" class="answer"></textarea>
+    <div class="flex-container">
+      <button onclick="CheckAnswer()" id="answer-button" class="answer-button">></button>
+      <button onclick="NextQuestion()" id ="proceed-button" class="proceed-button" disabled>Proceed</button>
+    </div>
+      
+    
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
